@@ -1,0 +1,27 @@
+﻿@model List<succus_shop.Models.SuccuModel>
+@{ 
+
+    ViewData["Title"] = "home page";
+
+}
+<div>
+    <h1>
+        Welcome
+    </h1>
+    @foreach (var succus in Model)
+    {
+        <div>
+            <h3>
+                @succus.Name
+            </h3>
+            <p>
+                @succus.Description
+            </p>
+            @if (succus.IsAvialible)
+	         {
+	                <button class="btn bnt-primary"> подробнее </button>	
+	         }
+        </div>
+    }
+
+</div>

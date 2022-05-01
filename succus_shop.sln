@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "succus_shop", "succus_shop\succus_shop.csproj", "{3E038CF1-2CF4-4B04-B17F-9807775A77B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E038CF1-2CF4-4B04-B17F-9807775A77B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E038CF1-2CF4-4B04-B17F-9807775A77B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E038CF1-2CF4-4B04-B17F-9807775A77B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E038CF1-2CF4-4B04-B17F-9807775A77B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91F45044-C541-4638-8C89-9CE065A79700}
+	EndGlobalSection
+EndGlobal
