@@ -13,33 +13,7 @@ namespace succus_shop.Models
         {
             Database.EnsureCreated();
             
-            if (!SuccuModels.Any())
-            {
-                SuccuModels.Add(new SuccuModel {
-                    Name = "Пулидонис",
-                    Description = "Распространнёный суккулент, очень красив и не требует много ухода",
-                    IsAvialible = true,
-                    Size = 8,
-                    Species = "Echeveria"
-                }) ;
-                SuccuModels.Add(new SuccuModel
-                {
-                    Name = "Пулидонис",
-                    Description = "Распространнёный суккулент, очень красив и не требует много ухода",
-                    IsAvialible = true,
-                    Size = 8,
-                    Species = "Echeveria"
-                });
-                SuccuModels.Add(new SuccuModel
-                {
-                    Name = "Опалина",
-                    Description = "маленькая красотка",
-                    IsAvialible = false,
-                    Size = 4,
-                    Species = "Graptoveria"
-                });
-                SaveChanges();
-            }
+ 
         }
     }
 }

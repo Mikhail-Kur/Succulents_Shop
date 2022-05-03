@@ -6,17 +6,19 @@
 }
 <div>
     <h1>
-        Welcome
+        Каталог
     </h1>
     @foreach (var succus in Model)
     {
         <div>
             <h3>
-                @succus.Name
+               @succus.Species
+               @succus.Name
             </h3>
             <p>
                 @succus.Description
             </p>
+
             @if (succus.IsAvialible)
 	         {
 	                <button class="btn bnt-primary"> подробнее </button>	
