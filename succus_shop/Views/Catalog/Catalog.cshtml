@@ -1,0 +1,40 @@
+﻿@model List<succus_shop.Models.SuccuModel>
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/_Layout.cshtml";
+}
+<div>
+    <h1>
+        Каталог
+    </h1>
+
+    @foreach (var succus in Model)
+    {
+        <div>
+            <h3>
+                @succus.Species
+                @succus.Name
+
+
+            </h3>
+            <p>
+                @succus.Description
+            </p>
+                <form>
+                    <ul class="nav navbar-nav">
+                        <li><a href="~/Catalog/EditDb/@succus.Id" class="navbar-brand">Редактировать</a></li>
+                    </ul>
+                    <button type="submit" asp-action="DeleteFromDb"  asp-route-id="@succus.Id">
+                        Удалить
+                    </button>
+                </form>
+           
+
+        </div>
+    }
+<div>
+    <ul class="nav navbar-nav">
+        <li><a href="~/Catalog/AddInDb" class="navbar-brand">Добавить</a></li>
+    </ul>
+</div>
+    </div>

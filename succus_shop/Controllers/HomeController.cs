@@ -9,15 +9,12 @@ namespace succus_shop.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly SuccuDbContext _SuccuDbContext;
-        public HomeController(SuccuDbContext succuDbContext)
-        {
-            _SuccuDbContext = succuDbContext;
-        }
+
         public IActionResult Index()
         {
-           ViewData.Model = _SuccuDbContext.SuccuModels.OrderBy(item => item.Id).ToList();
             return View();
         }
+
+
     }
 }
