@@ -1,4 +1,5 @@
 ﻿@model List<succus_shop.Models.SuccuModel>
+
 @{
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/_Layout.cshtml";
@@ -20,21 +21,31 @@
             <p>
                 @succus.Description
             </p>
-                <form>
-                    <ul class="nav navbar-nav">
-                        <li><a href="~/Catalog/EditDb/@succus.Id" class="navbar-brand">Редактировать</a></li>
-                    </ul>
-                    <button type="submit" asp-action="DeleteFromDb"  asp-route-id="@succus.Id">
-                        Удалить
-                    </button>
-                </form>
-           
+            @{
+
+                if (ViewBag.User == "admin")
+                {
+                    <form>
+                        <ul class="nav navbar-nav">
+                            <li><a href="~/Catalog/EditDb/@succus.Id" class="navbar-brand">Редактировать</a></li>
+                        </ul>
+                        <button type="submit" asp-action="DeleteFromDb" asp-route-id="@succus.Id">
+                            Удалить
+                        </button>
+                    </form>
+                }
+
+            }
+
+
 
         </div>
     }
-<div>
-    <ul class="nav navbar-nav">
-        <li><a href="~/Catalog/AddInDb" class="navbar-brand">Добавить</a></li>
-    </ul>
+    @if (ViewBag.User=="admin")
+    {
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href="~/Catalog/AddInDb" class="navbar-brand">Добавить</a></li>
+        </ul>
+    </div>}
 </div>
-    </div>

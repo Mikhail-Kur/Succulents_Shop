@@ -3,10 +3,93 @@
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/_Layout.cshtml";
 }
-<div>
-    <h1>
-        Главная страница
-    </h1>
-    
+<div class="offer-container">
+    <h2>Продажа растений из частной сибирской коллекции</h2>
+    <h3>
+        На выбор предоставлены множество
+        различных суккулентов взрощенных с
+        любовью и заботой
+    </h3>
 
+    <button class="button_catalog">
+        Перейти к каталогу
+        <img class="arrow" src="../images/arrow.svg" alt="arrow">
+    </button>
+</div>
+
+
+<div class="owl-container">
+    <div id="js-carousel" class="owl-carousel">
+
+        <div class="carousel-item">
+            <img class="carousel-img-item"src="../images/haworthia.png" alt=""></img>
+            <div class="flex">
+                <a class="carousel-item-href" href="#" class="succu_name">Хавортии</a>
+                <img class="arrow1" src="../images/arrow.svg" alt="arrow"></img>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="carousel-img-item"src="../images/echeweria.png" alt=""></img>
+            <div class="flex">
+                <a class="carousel-item-href" href="#" class="succu_name">Эхиверии</a>
+                <img class="arrow1" src="../images/arrow.svg" alt="arrow"></img>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="carousel-img-item"src="../images/crassula.png" alt=""></img>
+            <div class="flex">
+                <a class="carousel-item-href" href="#" class="succu_name">Крассулы</a>
+                <img class="arrow1" src="../images/arrow.svg" alt="arrow"></img>
+            </div>
+            </img>
+        </div>
+    </div>
+
+    <script type="text/javascript"src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/scrpt.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+</div>
+<div class="pluses">
+    <div class="argument">
+        <img src="../images/succuColection.svg" alt="">
+        <h2>Частная коллекция</h2>
+        <h3>
+            Здоровые растения адаптированные
+            даже к суровым сибирским условиям
+        </h3>
+    </div>
+    <div class="argument">
+        <img src="../images/delivery.svg" alt="">
+        <h2>Доставка по РФ</h2>
+        <h3>
+            Доставка по всей России почтой росии
+            или сдэк, при заказе от 3500 Р доставка за наш счёт
+        </h3>
+    </div>
+    <div class="argument">
+        <img src="../images/bonus.svg" alt="">
+        <h2>Система бонусов</h2>
+        <h3>
+            Доставка по всей России почтой росии
+            или сдэк, при заказе от 3500 Р доставка за наш счёт
+        </h3>
+    </div>
+</div>
+<div class="questions">
+    <div class="call_us">
+        <h2>У вас есть к нам вопросы?</h2>
+        <h3>
+            Свяжитесь с нами
+            в группе вконтакте!
+        </h3>
+        <div class="vk-ref bottom">
+            <img src="../images/vk-logo-white.svg" alt="vk-logo-white">
+            <a href="https://vk.com/succulent_room">SucculentRoom</a>
+        </div>
+        <h3>
+            Или напишите
+            нам на почту!
+        </h3>
+        <h3>SucculentRoom@mail.ru</h3>
+    </div>
 </div>

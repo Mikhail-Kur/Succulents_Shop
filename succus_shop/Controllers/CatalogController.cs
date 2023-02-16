@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using succus_shop.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 
@@ -17,9 +19,20 @@ namespace succus_shop.Controllers
         }
         public IActionResult Catalog()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                string role = User.FindFirst(x => x.Type == ClaimsIdentity.DefaultRoleClaimType).Value;
+                ViewBag.User = role;
+            }
+            else
+            {
+                ViewBag.User = "customer";
+            }
+
             ViewData.Model = _SuccuDbContext.SuccuModels.OrderBy(item => item.Id).ToList();
             return View();
         }
+        
         [HttpGet]
         public IActionResult EditDb(int id)
         {
@@ -41,12 +54,12 @@ namespace succus_shop.Controllers
         [HttpGet]
         public IActionResult AddInDb()
         {
-
             return View();
         }
         [HttpPost]
         public IActionResult AddInDb(SuccuModel succuModel)
         {
+            
             _SuccuDbContext.SuccuModels.Add(succuModel);
             _SuccuDbContext.SaveChanges();
             return RedirectToPage("/Catalog");

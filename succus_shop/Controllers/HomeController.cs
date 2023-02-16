@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using succus_shop.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ namespace succus_shop.Controllers
 {
     public class HomeController : Controller
     {
-
+        [Authorize]
         public IActionResult Index()
         {
             return View();

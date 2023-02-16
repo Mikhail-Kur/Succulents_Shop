@@ -152,3 +152,17 @@ D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Shared\_Validat
 D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Catalog\AddInDb.cshtml.g.cs
 D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Catalog\Catalog.cshtml.g.cs
 D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Catalog\EditDb.cshtml.g.cs
+D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Roles\Edit.cshtml.g.cs
+D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Roles\Index.cshtml.g.cs
+D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\Razor\Views\Roles\UserList.cshtml.g.cs
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\succus_shop.StaticWebAssets.xml
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\Progects\succus_shop\succus_shop\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Progects\succus_shop\succus_shop\obj\Debug\net5.0\succus_shop.MvcApplicationPartsAssemblyInfo.cs

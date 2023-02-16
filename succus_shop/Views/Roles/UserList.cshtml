@@ -1,0 +1,19 @@
+﻿@model List<succus_shop.Models.UserModel>
+@{
+    ViewData["Title"] = "Роли";
+    Layout = "~/Views/_Layout.cshtml";
+}
+<h2>Список пользователей</h2>
+<table class="table">
+    @foreach (var user in Model)
+    {
+    <tr>
+        <td>@user.Email</td>
+        <td>
+            <ul class="nav navbar-nav">
+                <li><a href="~/Roles/Edit/@user.Id" class="navbar-brand">Редактировать</a></li>
+            </ul>
+        </td>
+    </tr>
+    }
+</table>
